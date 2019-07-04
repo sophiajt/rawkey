@@ -12,5 +12,5 @@ winapi = "0.3.7"
 version = "2.18.1"
 features = ["xlib"]
 
-[target.'cfg(target_os = "macos"'.dependencies]
+[target.'cfg(target_os = "macos")'.dependencies]
 readkey = "0.1.5"

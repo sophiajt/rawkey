@@ -1,16 +1,16 @@
-#[cfg(windows)]
+#[cfg(target_os = "windows")]
 mod win;
-#[cfg(windows)]
+#[cfg(target_os = "windows")]
 pub use win::RawKey;
 
-#[cfg(unix)]
+#[cfg(target_os = "linux")]
 mod linux;
-#[cfg(unix)]
+#[cfg(target_os = "linux")]
 pub use linux::RawKey;
 
-#[cfg(macos)]
+#[cfg(target_os = "macos")]
 mod macos;
-#[cfg(macos)]
+#[cfg(target_os = "macos")]
 pub use macos::RawKey;
 
 pub enum KeyCode {
