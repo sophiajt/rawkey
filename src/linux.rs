@@ -26,11 +26,12 @@ impl RawKey {
             KeyCode::RightArrow => self.query_keystate(keysym::XK_Right),
             KeyCode::UpArrow => self.query_keystate(keysym::XK_Up),
             KeyCode::DownArrow => self.query_keystate(keysym::XK_Down),
-            KeyCode::A => self.query_keystate(keysym::XK_A),
-            KeyCode::S => self.query_keystate(keysym::XK_S),
-            KeyCode::Z => self.query_keystate(keysym::XK_Z),
-            KeyCode::X => self.query_keystate(keysym::XK_X),
-            KeyCode::Q => self.query_keystate(keysym::XK_Q),
+            KeyCode::LShift => self.query_keystate(keysym::XK_Shift_L),
+            KeyCode::LControl => self.query_keystate(keysym::XK_Control_L),
+            KeyCode::Escape => self.query_keystate(keysym::XK_Escape),
+            KeyCode::Tab => self.query_keystate(keysym::XK_Tab),
+            KeyCode::Space => self.query_keystate(keysym::XK_space),
+            KeyCode::Back => self.query_keystate(keysym::XK_BackSpace),
         }
     }
 
