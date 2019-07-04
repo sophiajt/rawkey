@@ -14,11 +14,12 @@ impl RawKey {
             KeyCode::RightArrow => readkey::Keycode::Right.is_pressed(),
             KeyCode::UpArrow => readkey::Keycode::Up.is_pressed(),
             KeyCode::DownArrow => readkey::Keycode::Down.is_pressed(),
-            KeyCode::A => readkey::Keycode::A.is_pressed(),
-            KeyCode::S => readkey::Keycode::S.is_pressed(),
-            KeyCode::Q => readkey::Keycode::Q.is_pressed(),
-            KeyCode::X => readkey::Keycode::X.is_pressed(),
-            KeyCode::Z => readkey::Keycode::Z.is_pressed(),
+            KeyCode::LShift => readkey::Keycode::Shift.is_pressed(),
+            KeyCode::LControl => readkey::Keycode::Control.is_pressed(),
+            KeyCode::Escape => readkey::Keycode::Escape.is_pressed(),
+            KeyCode::Space => readkey::Keycode::Space.is_pressed(),
+            KeyCode::Tab => readkey::Keycode::Tab.is_pressed(),
+            KeyCode::Back => readkey::Keycode::Delete.is_pressed(),
         }
     }
 }
