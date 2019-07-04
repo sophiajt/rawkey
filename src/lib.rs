@@ -13,6 +13,7 @@ mod macos;
 #[cfg(target_os = "macos")]
 pub use macos::RawKey;
 
+#[derive(Clone, Copy)]
 pub enum KeyCode {
     Escape,
     UpArrow,
