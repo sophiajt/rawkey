@@ -1,6 +1,6 @@
 use crate::KeyCode;
 use user32::GetAsyncKeyState;
-use winapi::winuser;
+use winapi::um::winuser;
 
 pub struct RawKey;
 
@@ -14,19 +14,22 @@ impl RawKey {
             KeyCode::RightArrow => query_keystate(winuser::VK_RIGHT),
             KeyCode::UpArrow => query_keystate(winuser::VK_UP),
             KeyCode::DownArrow => query_keystate(winuser::VK_DOWN),
-            KeyCode::A => query_keystate(winuser::VK_A),
-            KeyCode::S => query_keystate(winuser::VK_S),
-            KeyCode::Z => query_keystate(winuser::VK_Z),
-            KeyCode::X => query_keystate(winuser::VK_X),
-            KeyCode::Q => query_keystate(winuser::VK_Q),
+            KeyCode::LShift => query_keystate(winuser::VK_LSHIFT),
+            KeyCode::Space => query_keystate(winuser::VK_SPACE),
+            KeyCode::Back => query_keystate(winuser::VK_BACK),
+            KeyCode::LControl => query_keystate(winuser::VK_LCONTROL),
+            KeyCode::Tab => query_keystate(winuser::VK_TAB),
+            KeyCode::Escape => query_keystate(winuser::VK_ESCAPE),
         }
     }
 }
 
-fn query_keystate(key: u8) -> bool {
-    if GetAsyncKeyState(key) as u32 & 0x8000 != 0 {
-        true
-    } else {
-        false
+fn query_keystate(key: i32) -> bool {
+    unsafe {
+        if GetAsyncKeyState(key) as u32 & 0x8000 != 0 {
+            true
+        } else {
+            false
+        }
     }
 }

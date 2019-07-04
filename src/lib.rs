@@ -14,13 +14,14 @@ mod macos;
 pub use macos::RawKey;
 
 pub enum KeyCode {
-    Q,
+    Escape,
     UpArrow,
     DownArrow,
     LeftArrow,
     RightArrow,
-    A,
-    S,
-    Z,
-    X,
+    LShift,
+    LControl,
+    Tab,
+    Back,
+    Space,
 }
