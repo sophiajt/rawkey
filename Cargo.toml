@@ -1,12 +1,13 @@
 [package]
 name = "rawkey"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Jonathan Turner <jonathan.d.turner@gmail.com>"]
 edition = "2018"
 description = "Raw terminal key input"
-license-file = "LICENSE"
+license = "MIT"
 homepage = "https://github.com/jonathandturner/rawkey"
 repository = "https://github.com/jonathandturner/rawkey"
+readme = "README.md"
 
 [target.'cfg(target_os = "windows")'.dependencies]
 user32-sys = "0.2.0"
