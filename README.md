@@ -32,5 +32,6 @@ loop {
     if rawkey.is_pressed(KeyCode::RightArrow) {
         print!("Right ");
     }
+    println!("");
 }
 ```
