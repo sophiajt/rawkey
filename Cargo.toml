@@ -3,6 +3,10 @@ name = "rawkey"
 version = "0.1.0"
 authors = ["Jonathan Turner <jonathan.d.turner@gmail.com>"]
 edition = "2018"
+description = "Raw terminal key input"
+license-file = "LICENSE"
+homepage = "https://github.com/jonathandturner/rawkey"
+repository = "https://github.com/jonathandturner/rawkey"
 
 [target.'cfg(target_os = "windows")'.dependencies]
 user32-sys = "0.2.0"
