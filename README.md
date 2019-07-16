@@ -14,6 +14,8 @@ Early release of a project to support raw key input in terminals. Currently, thi
 Rather than using events, rawkey offers a way to scan to see if the key is pressed or not.
 
 ```rust
+use rawkey::{KeyCode, RawKey};
+
 let mut rawkey = RawKey::new();
 
 loop {
