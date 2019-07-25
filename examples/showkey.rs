@@ -19,20 +19,29 @@ fn main() {
         if rawkey.is_pressed(KeyCode::RightArrow) {
             print!("Right ");
         }
-        if rawkey.is_pressed(KeyCode::LShift) {
-            print!("LShift ");
+        if rawkey.is_pressed(KeyCode::LeftShift) {
+            print!("LeftShift ");
         }
-        if rawkey.is_pressed(KeyCode::Back) {
-            print!("Back ");
+        if rawkey.is_pressed(KeyCode::BackSpace) {
+            print!("BackSpace ");
         }
-        if rawkey.is_pressed(KeyCode::LControl) {
-            print!("LControl ");
+        if rawkey.is_pressed(KeyCode::LeftControl) {
+            print!("LeftControl ");
         }
         if rawkey.is_pressed(KeyCode::Tab) {
             print!("Tab ");
         }
         if rawkey.is_pressed(KeyCode::Space) {
             print!("Space ");
+        }
+        if rawkey.is_pressed(KeyCode::PageUp) {
+            print!("PageUp ");
+        }
+        if rawkey.is_pressed(KeyCode::PageDown) {
+            print!("PageDown ");
+        }
+        if rawkey.is_pressed(KeyCode::Alt) {
+            print!("Alt ");
         }
         println!("");
     }

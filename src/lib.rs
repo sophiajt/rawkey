@@ -27,4 +27,5 @@ pub enum KeyCode {
     Space,
     PageUp,
     PageDown,
+    Alt,
 }

@@ -14,12 +14,15 @@ impl RawKey {
             KeyCode::RightArrow => query_keystate(winuser::VK_RIGHT),
             KeyCode::UpArrow => query_keystate(winuser::VK_UP),
             KeyCode::DownArrow => query_keystate(winuser::VK_DOWN),
-            KeyCode::LShift => query_keystate(winuser::VK_LSHIFT),
+            KeyCode::LeftShift => query_keystate(winuser::VK_LSHIFT),
             KeyCode::Space => query_keystate(winuser::VK_SPACE),
-            KeyCode::Back => query_keystate(winuser::VK_BACK),
-            KeyCode::LControl => query_keystate(winuser::VK_LCONTROL),
+            KeyCode::BackSpace => query_keystate(winuser::VK_BACK),
+            KeyCode::LeftControl => query_keystate(winuser::VK_LCONTROL),
             KeyCode::Tab => query_keystate(winuser::VK_TAB),
             KeyCode::Escape => query_keystate(winuser::VK_ESCAPE),
+            KeyCode::PageDown => query_keystate(winuser::VK_NEXT),
+            KeyCode::PageUp => query_keystate(winuser::VK_PRIOR),
+            KeyCode::Alt => query_keystate(winuser::VK_MENU),
         }
     }
 }
