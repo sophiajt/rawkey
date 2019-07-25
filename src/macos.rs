@@ -20,6 +20,8 @@ impl RawKey {
             KeyCode::Space => readkey::Keycode::Space.is_pressed(),
             KeyCode::Tab => readkey::Keycode::Tab.is_pressed(),
             KeyCode::Back => readkey::Keycode::Delete.is_pressed(),
+            KeyCode::PageUp => readkey::Keycode::PageUp.is_pressed(),
+            KeyCode::PageDown => readkey::Keycode::PageDown.is_pressed(),
         }
     }
 }

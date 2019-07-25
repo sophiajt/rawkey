@@ -32,6 +32,8 @@ impl RawKey {
             KeyCode::Tab => self.query_keystate(keysym::XK_Tab),
             KeyCode::Space => self.query_keystate(keysym::XK_space),
             KeyCode::Back => self.query_keystate(keysym::XK_BackSpace),
+            KeyCode::PageDown => self.query_keystate(keysym::XK_Page_Down),
+            KeyCode::PageUp => self.query_keystate(keysym::XK_Page_Up),
         }
     }
 
