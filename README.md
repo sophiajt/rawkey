@@ -10,6 +10,9 @@ Early release of a project to support raw key input in terminals. Currently, thi
 * UpArrow
 * RightArrow
 * DownArrow
+* PageUp
+* PageDown
+* Alt
 
 Rather than using events, rawkey offers a way to scan to see if the key is pressed or not.
 
