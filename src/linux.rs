@@ -39,7 +39,6 @@ impl RawKey {
     }
 
     fn query_keystate(&self, key: u32) -> bool {
-        let mut keycodes: Vec<u64> = vec![];
         unsafe {
             let keymap: *mut i8 = [0; 32].as_mut_ptr();
             xlib::XQueryKeymap(self.display, keymap);
