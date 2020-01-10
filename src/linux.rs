@@ -40,7 +40,7 @@ impl RawKey {
 
     fn query_keystate(&self, key: u32) -> bool {
         unsafe {
-            let keymap: *mut i8 = [0; 32].as_mut_ptr();
+            let keymap = [0; 32].as_mut_ptr();
             xlib::XQueryKeymap(self.display, keymap);
             for (ix, byte) in slice::from_raw_parts(keymap, 32).iter().enumerate() {
                 for bit in 0_u8..8_u8 {
