@@ -3,9 +3,9 @@ mod win;
 #[cfg(target_os = "windows")]
 pub use win::RawKey;
 
-#[cfg(target_os = "linux")]
+#[cfg(all(unix, not(target_os = "macos")))]
 mod linux;
-#[cfg(target_os = "linux")]
+#[cfg(all(unix, not(target_os = "macos")))]
 pub use linux::RawKey;
 
 #[cfg(target_os = "macos")]
