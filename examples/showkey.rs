@@ -1,7 +1,7 @@
 use rawkey::{KeyCode, RawKey};
 
 fn main() {
-    let mut rawkey = RawKey::new();
+    let rawkey = RawKey::new();
 
     loop {
         if rawkey.is_pressed(KeyCode::Escape) {
